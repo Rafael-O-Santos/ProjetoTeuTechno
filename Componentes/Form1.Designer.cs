@@ -33,21 +33,21 @@ namespace Componentes
             this.cbbFruitasSelecionadas = new System.Windows.Forms.ComboBox();
             this.ltbFruitas = new System.Windows.Forms.ListBox();
             this.gpbFuitas = new System.Windows.Forms.GroupBox();
-            this.lblBanana = new System.Windows.Forms.Label();
-            this.lblMaca = new System.Windows.Forms.Label();
-            this.lblPera = new System.Windows.Forms.Label();
-            this.lblMelancia = new System.Windows.Forms.Label();
             this.lblSair = new System.Windows.Forms.Label();
+            this.lblMelancia = new System.Windows.Forms.Label();
+            this.lblPera = new System.Windows.Forms.Label();
+            this.lblMaca = new System.Windows.Forms.Label();
+            this.lblBanana = new System.Windows.Forms.Label();
             this.lblFruitasSelecionadas = new System.Windows.Forms.Label();
             this.txtFruitaSelecionadas = new System.Windows.Forms.TextBox();
-            this.lblFruitaSelecionada = new System.Windows.Forms.Label();
+            this.lblFruitaListadas = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.lblFruitaListada = new System.Windows.Forms.Label();
             this.btnSelecionar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
-            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
             this.txtSelecione = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnInserir = new System.Windows.Forms.Button();
             this.gpbFuitas.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,32 +85,14 @@ namespace Componentes
             this.gpbFuitas.TabStop = false;
             this.gpbFuitas.Text = "Frutas";
             // 
-            // lblBanana
+            // lblSair
             // 
-            this.lblBanana.AutoSize = true;
-            this.lblBanana.Location = new System.Drawing.Point(7, 36);
-            this.lblBanana.Name = "lblBanana";
-            this.lblBanana.Size = new System.Drawing.Size(72, 16);
-            this.lblBanana.TabIndex = 0;
-            this.lblBanana.Text = "1 - Banana";
-            // 
-            // lblMaca
-            // 
-            this.lblMaca.AutoSize = true;
-            this.lblMaca.Location = new System.Drawing.Point(6, 67);
-            this.lblMaca.Name = "lblMaca";
-            this.lblMaca.Size = new System.Drawing.Size(59, 16);
-            this.lblMaca.TabIndex = 1;
-            this.lblMaca.Text = "2 - Maça";
-            // 
-            // lblPera
-            // 
-            this.lblPera.AutoSize = true;
-            this.lblPera.Location = new System.Drawing.Point(6, 96);
-            this.lblPera.Name = "lblPera";
-            this.lblPera.Size = new System.Drawing.Size(54, 16);
-            this.lblPera.TabIndex = 2;
-            this.lblPera.Text = "3 - Pera";
+            this.lblSair.AutoSize = true;
+            this.lblSair.Location = new System.Drawing.Point(6, 149);
+            this.lblSair.Name = "lblSair";
+            this.lblSair.Size = new System.Drawing.Size(49, 16);
+            this.lblSair.TabIndex = 4;
+            this.lblSair.Text = "5 - Sair";
             // 
             // lblMelancia
             // 
@@ -121,14 +103,32 @@ namespace Componentes
             this.lblMelancia.TabIndex = 3;
             this.lblMelancia.Text = "4 - Melancia";
             // 
-            // lblSair
+            // lblPera
             // 
-            this.lblSair.AutoSize = true;
-            this.lblSair.Location = new System.Drawing.Point(6, 149);
-            this.lblSair.Name = "lblSair";
-            this.lblSair.Size = new System.Drawing.Size(49, 16);
-            this.lblSair.TabIndex = 4;
-            this.lblSair.Text = "5 - Sair";
+            this.lblPera.AutoSize = true;
+            this.lblPera.Location = new System.Drawing.Point(6, 96);
+            this.lblPera.Name = "lblPera";
+            this.lblPera.Size = new System.Drawing.Size(54, 16);
+            this.lblPera.TabIndex = 2;
+            this.lblPera.Text = "3 - Pera";
+            // 
+            // lblMaca
+            // 
+            this.lblMaca.AutoSize = true;
+            this.lblMaca.Location = new System.Drawing.Point(6, 67);
+            this.lblMaca.Name = "lblMaca";
+            this.lblMaca.Size = new System.Drawing.Size(59, 16);
+            this.lblMaca.TabIndex = 1;
+            this.lblMaca.Text = "2 - Maça";
+            // 
+            // lblBanana
+            // 
+            this.lblBanana.AutoSize = true;
+            this.lblBanana.Location = new System.Drawing.Point(7, 36);
+            this.lblBanana.Name = "lblBanana";
+            this.lblBanana.Size = new System.Drawing.Size(72, 16);
+            this.lblBanana.TabIndex = 0;
+            this.lblBanana.Text = "1 - Banana";
             // 
             // lblFruitasSelecionadas
             // 
@@ -142,21 +142,23 @@ namespace Componentes
             // 
             // txtFruitaSelecionadas
             // 
+            this.txtFruitaSelecionadas.Enabled = false;
             this.txtFruitaSelecionadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFruitaSelecionadas.Location = new System.Drawing.Point(56, 307);
+            this.txtFruitaSelecionadas.MaxLength = 50;
             this.txtFruitaSelecionadas.Name = "txtFruitaSelecionadas";
             this.txtFruitaSelecionadas.Size = new System.Drawing.Size(189, 22);
             this.txtFruitaSelecionadas.TabIndex = 1;
             // 
-            // lblFruitaSelecionada
+            // lblFruitaListadas
             // 
-            this.lblFruitaSelecionada.AutoSize = true;
-            this.lblFruitaSelecionada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFruitaSelecionada.Location = new System.Drawing.Point(53, 352);
-            this.lblFruitaSelecionada.Name = "lblFruitaSelecionada";
-            this.lblFruitaSelecionada.Size = new System.Drawing.Size(135, 16);
-            this.lblFruitaSelecionada.TabIndex = 5;
-            this.lblFruitaSelecionada.Text = "Fruitas Selecionadas";
+            this.lblFruitaListadas.AutoSize = true;
+            this.lblFruitaListadas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFruitaListadas.Location = new System.Drawing.Point(53, 352);
+            this.lblFruitaListadas.Name = "lblFruitaListadas";
+            this.lblFruitaListadas.Size = new System.Drawing.Size(102, 16);
+            this.lblFruitaListadas.TabIndex = 5;
+            this.lblFruitaListadas.Text = "Fruitas Listadas";
             // 
             // lblTitulo
             // 
@@ -186,6 +188,7 @@ namespace Componentes
             this.btnSelecionar.TabIndex = 2;
             this.btnSelecionar.Text = "&Selecionar";
             this.btnSelecionar.UseVisualStyleBackColor = true;
+            this.btnSelecionar.Click += new System.EventHandler(this.btnSelecionar_Click);
             // 
             // btnLimpar
             // 
@@ -195,45 +198,50 @@ namespace Componentes
             this.btnLimpar.TabIndex = 4;
             this.btnLimpar.Text = "Limpa&r";
             this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
-            // btnVoltar
+            // btnSair
             // 
-            this.btnVoltar.Location = new System.Drawing.Point(470, 450);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(121, 43);
-            this.btnVoltar.TabIndex = 5;
-            this.btnVoltar.Text = "&Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnSair.Location = new System.Drawing.Point(470, 450);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(121, 43);
+            this.btnSair.TabIndex = 5;
+            this.btnSair.Text = "&Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
             // txtSelecione
             // 
             this.txtSelecione.Location = new System.Drawing.Point(59, 50);
+            this.txtSelecione.MaxLength = 50;
             this.txtSelecione.Name = "txtSelecione";
             this.txtSelecione.Size = new System.Drawing.Size(241, 20);
             this.txtSelecione.TabIndex = 0;
+            this.txtSelecione.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtSelecione_KeyDown);
             // 
-            // button1
+            // btnInserir
             // 
-            this.button1.Location = new System.Drawing.Point(183, 450);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 43);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "&Inserir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnInserir.Location = new System.Drawing.Point(183, 450);
+            this.btnInserir.Name = "btnInserir";
+            this.btnInserir.Size = new System.Drawing.Size(121, 43);
+            this.btnInserir.TabIndex = 3;
+            this.btnInserir.Text = "&Inserir";
+            this.btnInserir.UseVisualStyleBackColor = true;
+            this.btnInserir.Click += new System.EventHandler(this.btnInserir_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(618, 527);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnInserir);
             this.Controls.Add(this.txtSelecione);
-            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnSelecionar);
             this.Controls.Add(this.lblFruitaListada);
             this.Controls.Add(this.lblTitulo);
-            this.Controls.Add(this.lblFruitaSelecionada);
+            this.Controls.Add(this.lblFruitaListadas);
             this.Controls.Add(this.txtFruitaSelecionadas);
             this.Controls.Add(this.lblFruitasSelecionadas);
             this.Controls.Add(this.gpbFuitas);
@@ -264,14 +272,14 @@ namespace Componentes
         private System.Windows.Forms.Label lblBanana;
         private System.Windows.Forms.Label lblFruitasSelecionadas;
         private System.Windows.Forms.TextBox txtFruitaSelecionadas;
-        private System.Windows.Forms.Label lblFruitaSelecionada;
+        private System.Windows.Forms.Label lblFruitaListadas;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Label lblFruitaListada;
         private System.Windows.Forms.Button btnSelecionar;
         private System.Windows.Forms.Button btnLimpar;
-        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.TextBox txtSelecione;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnInserir;
     }
 }
 

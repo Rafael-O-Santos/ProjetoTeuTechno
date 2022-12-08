@@ -1,0 +1,10 @@
+C:\Users\rafael.osantos25\Documents\Visual Studio 2019\TEUTechno\Componentes\bin\Debug\Componentes.exe.config
+C:\Users\rafael.osantos25\Documents\Visual Studio 2019\TEUTechno\Componentes\bin\Debug\Componentes.exe
+C:\Users\rafael.osantos25\Documents\Visual Studio 2019\TEUTechno\Componentes\bin\Debug\Componentes.pdb
+C:\Users\rafael.osantos25\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.csproj.AssemblyReference.cache
+C:\Users\rafael.osantos25\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.Form1.resources
+C:\Users\rafael.osantos25\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.Properties.Resources.resources
+C:\Users\rafael.osantos25\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.csproj.GenerateResource.cache
+C:\Users\rafael.osantos25\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.csproj.CoreCompileInputs.cache
+C:\Users\rafael.osantos25\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.exe
+C:\Users\rafael.osantos25\Documents\Visual Studio 2019\TEUTechno\Componentes\obj\Debug\Componentes.pdb
